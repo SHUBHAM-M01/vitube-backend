@@ -7,7 +7,7 @@ export const DB_CONNECT = async () => {
       `${process.env.MONGODB_URI}/${DB_NAME}`
     );
     console.log(
-      `Connection to MongoDB Succeded : ${connectionInstance.connection.port}`
+      `Connection to MongoDB Succeded at PORT : ${connectionInstance.connection.port}`
     );
   } catch (error) {
     console.error("MONGODB CONNECTION ERROR : ", error);
